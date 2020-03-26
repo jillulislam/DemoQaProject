@@ -51,7 +51,8 @@ public class CommonActions {
         return driver.getTitle();
     }
 
-    public void clickOn(WebElement element){
+    public void
+    clickOn(WebElement element){
         element.click();
     }
 
@@ -87,11 +88,11 @@ public class CommonActions {
        return element.isDisplayed();
     }
 
-    public boolean verifyIsSelected(WebElement element){
+    public boolean verifyElementIsSelected(WebElement element){
        return element.isSelected();
     }
 
-    public boolean verifyIsEnabled(WebElement element){
+    public boolean verifyElementIsEnabled(WebElement element){
        return element.isEnabled();
     }
 
