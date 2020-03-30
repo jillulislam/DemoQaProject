@@ -25,59 +25,47 @@ public class SelectablePage extends CommonActions {
     @FindBy(xpath = "//ol[@id='selectable']/li[5]")
     WebElement item_5;
 
-
     @FindBy(xpath = "//ol[@id='selectable']/li[6]")
     WebElement item_6;
 
     @FindBy(xpath = "//ol[@id='selectable']/li[7]")
     WebElement item_7;
 
-    public boolean verifyItem1IsSelected(){
-        return verifyElementIsSelected(item_1);
+    public void clickOnItem1(){
+        clickOn(item_1);
     }
 
-    public boolean verifyItem1IsDisplayed(){
-        return verifyElementIsDisplayed(item_1);
+    public void clickOnItem2(){
+        clickOn(item_2);
     }
 
-    public boolean verifyItem1IsEnabled(){
-        return verifyElementIsEnabled(item_1);
+    public void clickOnItem3(){
+        clickOn(item_3);
     }
 
-    public boolean verifyItem2IsSelected(){
-       return verifyElementIsSelected(item_2);
-    }
-
-    public boolean verifyItem2IsDisplayed(){
-        return verifyElementIsDisplayed(item_2);
-    }
-
-    public boolean verifyItem2IsEnabled(){
-        return verifyElementIsEnabled(item_2);
-    }
-
-    public void VerifyItem3IsSelected(){
-        verifyElementIsSelected(item_3);
-    }
-
-    public boolean verifyItem3IsDisplayed(){
-        return verifyElementIsEnabled(item_3);
-    }
-    public boolean verifyItem3IsEnabled(){
-        return verifyElementIsEnabled(item_3);
-    }
-
-    public void item4(){
+    public void clickOnItem4(){
         clickOn(item_4);
     }
 
-    public void item5(){
+    public void clickOnItem5(){
         clickOn(item_5);
     }
-    public void item6(){
+
+    public void clickOnItem6(){
         clickOn(item_6);
     }
-    public void item7(){
+
+    public void clickOnItem7(){
         clickOn(item_7);
+    }
+
+    public void verifyItem1IsClickedAndSelected(){
+      //  clickOnItem1();
+        verifyElementIsSelected(item_1);
+    }
+
+    public void verifyItem2IsEnabled(){
+        //  clickOnItem2();
+        verifyElementIsSelected(item_2);
     }
 }

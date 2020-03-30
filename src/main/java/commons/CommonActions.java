@@ -1,5 +1,6 @@
 package commons;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,29 +9,30 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class CommonActions {
 
-    static  WebDriver driver;
-            Actions act;
+    static WebDriver driver;
+    Actions act;
 
     public void initElement(){
         PageFactory.initElements(driver,this);
     }
 
     public void setChromeDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\jillu\\development\\source_code\\github\\LearningSelenium\\drivers\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20,SECONDS);
         driver.manage().window().maximize();
-
     }
+
     public void setGeckoDriver(){
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\jillu\\development\\source_code\\github\\LearningSelenium\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10,SECONDS);
@@ -43,16 +45,20 @@ public class CommonActions {
     public void verify(String expected, String actual){
         Assert.assertEquals(expected,actual);
     }
+
     public void verify(boolean expected, boolean actual){
         Assert.assertEquals(expected,actual);
+    }
+
+    public void verify(boolean condition){
+        Assert.assertTrue(condition);
     }
 
     public String getTitle(){
         return driver.getTitle();
     }
 
-    public void
-    clickOn(WebElement element){
+    public void clickOn(WebElement element){
         element.click();
     }
 
@@ -106,8 +112,59 @@ public class CommonActions {
         act.moveToElement(contantLocation).click().build().perform();
     }
 
+    public void switchToFrame(WebElement frameElement){
+        driver.switchTo().frame(frameElement);
+    }
+
+    public void switchBackToDefault(WebElement frameElement) {
+        driver.switchTo().defaultContent();
+    }
+
+    public void setSwitchWindow(int index, Boolean closeCurrentWindow){
+        Set <String> windowHandles = driver.getWindowHandles();
+        List <String> windowList = new ArrayList<>(windowHandles);
+        if (windowList.size()>1 && closeCurrentWindow){
+            driver.close();
+        }
+        if (index<windowList.size()){
+            String regWindow = windowList.get(index);
+            driver.switchTo().window(regWindow);
+        } else {
+            Assert.fail("Window is not available");
+        }
+    }
+
+    public String getText(WebElement element){
+       return element.getText();
+    }
+
     public void closeWindow(){
         driver.close();
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    public void setChromeDriver() {
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\jillu\\development\\source_code\\github\\LearningSelenium\\drivers\\chromedriver.exe");
+//        driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(20,SECONDS);
+//        driver.manage().window().maximize();
+//    }
+//    public void setGeckoDriver(){
+//        System.setProperty("webdriver.gecko.driver", "C:\\Users\\jillu\\development\\source_code\\github\\LearningSelenium\\geckodriver.exe");
+//        driver = new FirefoxDriver();
+//        driver.manage().window().maximize();
+//        driver.manage().timeouts().implicitlyWait(10,SECONDS);
+//    }

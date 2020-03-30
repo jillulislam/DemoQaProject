@@ -1,5 +1,4 @@
 package pageObject;
-
 import commons.CommonActions;
 import commons.LeftNevigation;
 import org.openqa.selenium.WebElement;
@@ -27,7 +26,6 @@ public class HtmlContactForm extends CommonActions {
 
     @FindBy(xpath = "//input[@type='submit']")
     WebElement submitButton;
-
 
     public void inputFirstName(){
         typeText(firstName,"Rahim");
