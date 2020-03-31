@@ -20,19 +20,21 @@ public class CommonActions {
 
     static WebDriver driver;
     Actions act;
+    Select select;
 
     public void initElement(){
         PageFactory.initElements(driver,this);
     }
 
-    public void setChromeDriver() {
+    public void openChrome() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20,SECONDS);
         driver.manage().window().maximize();
     }
 
-    public void setGeckoDriver(){
+    public void openFirefox(){
+        WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10,SECONDS);
@@ -58,6 +60,10 @@ public class CommonActions {
         return driver.getTitle();
     }
 
+    public String getCurrentUrl(){
+        return driver.getCurrentUrl();
+    }
+
     public void clickOn(WebElement element){
         element.click();
     }
@@ -67,39 +73,39 @@ public class CommonActions {
     }
 
     public void waitFor(int milli) throws InterruptedException {
-    Thread.sleep(milli);
+        Thread.sleep(milli);
     }
 
     public void selectBtVisibleText(WebElement element, String text){
-        Select select = new Select(element);
+        select = new Select(element);
         select.selectByVisibleText(text);
     }
 
     public void selectByIndex(WebElement element, int index){
-        Select select = new Select(element);
+        select = new Select(element);
         select.deselectByIndex(index);
     }
 
     public void selectByValue(WebElement element, String value){
-        Select select = new Select(element);
+        select = new Select(element);
         select.selectByValue(value);
     }
 
     public String getSelectedValueFromDropdown(WebElement element){
-        Select select = new Select(element);
+        select = new Select(element);
         return select.getFirstSelectedOption().getText();
     }
 
     public boolean verifyElementIsDisplayed(WebElement element){
-       return element.isDisplayed();
+        return element.isDisplayed();
     }
 
     public boolean verifyElementIsSelected(WebElement element){
-       return element.isSelected();
+        return element.isSelected();
     }
 
     public boolean verifyElementIsEnabled(WebElement element){
-       return element.isEnabled();
+        return element.isEnabled();
     }
 
     public void mouseOver(WebElement element){
@@ -120,7 +126,7 @@ public class CommonActions {
         driver.switchTo().defaultContent();
     }
 
-    public void setSwitchWindow(int index, Boolean closeCurrentWindow){
+    public void switchWindow(int index, Boolean closeCurrentWindow){
         Set <String> windowHandles = driver.getWindowHandles();
         List <String> windowList = new ArrayList<>(windowHandles);
         if (windowList.size()>1 && closeCurrentWindow){

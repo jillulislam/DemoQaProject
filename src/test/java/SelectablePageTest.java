@@ -1,7 +1,6 @@
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import pageObject.HtmlContactForm;
 import pageObject.SelectablePage;
 
 public class SelectablePageTest {
@@ -11,7 +10,7 @@ public class SelectablePageTest {
     @BeforeClass
     public static void openBrowser(){
         SelectablePage selectablePage = new SelectablePage();
-        selectablePage.setChromeDriver();
+        selectablePage.openChrome();
     }
 
     @Before
@@ -20,8 +19,8 @@ public class SelectablePageTest {
     }
 
     @Test
-    public void verifyItem1IsSelected(){
-        selectablePage.verifyItem1IsClickedAndSelected();
+    public void verifyItem1ButtonIsDisplayed(){
+        selectablePage.verifyItem1IsDisplayed();
     }
 
     @Test

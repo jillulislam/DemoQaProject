@@ -1,15 +1,18 @@
 package pageObject;
 
 import commons.CommonActions;
+import commons.Header;
 import commons.LeftNevigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SwitchWindow extends CommonActions {
+public class SwitchWindowPage extends CommonActions {
     LeftNevigation leftNevigation;
+    Header header;
 
-    public SwitchWindow(){
+    public SwitchWindowPage(){
         initElement();
+        header = new Header();
         leftNevigation = new LeftNevigation();
     }
     @FindBy(xpath = "//a[@rel='noopener noreferrer']/em/strong")
@@ -36,10 +39,7 @@ public class SwitchWindow extends CommonActions {
     @FindBy(xpath = "//button[@id='alert']")
     WebElement alertBox;
 
-    public void switchToNewBrowserWindow(){
+    public void clickOnNewBrowserWindow(){
         clickOn(newBrowserWindow);
-        setSwitchWindow(1, true);
     }
-
-
 }

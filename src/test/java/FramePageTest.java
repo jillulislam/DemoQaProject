@@ -1,6 +1,5 @@
 import org.junit.*;
 import pageObject.FramePage;
-import pageObject.HtmlContactForm;
 
 public class FramePageTest {
 
@@ -9,7 +8,7 @@ public class FramePageTest {
     @BeforeClass
     public static void openBrowser(){
         FramePage framePage = new FramePage();
-        framePage.setChromeDriver();
+        framePage.openChrome();
     }
 
     @Before

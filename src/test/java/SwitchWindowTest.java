@@ -1,27 +1,32 @@
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import pageObject.HtmlContactForm;
-import pageObject.SwitchWindow;
+import pageObject.NewBrowserWindowPage;
+import pageObject.SwitchWindowPage;
 
 public class SwitchWindowTest {
 
-    SwitchWindow switchWindow = new SwitchWindow();
+    SwitchWindowPage switchWindowPage = new SwitchWindowPage();
 
     @BeforeClass
     public static void openBrowser(){
-        SwitchWindow switchWindow = new SwitchWindow();
-        switchWindow.setChromeDriver();
+        SwitchWindowPage switchWindow = new SwitchWindowPage();
+        switchWindow.openChrome();
     }
 
     @Before
     public void openUrl(){
-        switchWindow.openUrl("https://demoqa.com/automation-practice-switch-windows/");
+        switchWindowPage.openUrl("https://demoqa.com/automation-practice-switch-windows/");
     }
 
     @Test
     public void clickOnNewBrowser(){
-        switchWindow.switchToNewBrowserWindow();
-        switchWindow.verify("Free QA Automation Tools Tutorial for Beginners with Examples",switchWindow.getTitle());
+        switchWindowPage.clickOnNewBrowserWindow();
+        switchWindowPage.switchWindow(1,false);
+        NewBrowserWindowPage newBrowserWindowPage = new NewBrowserWindowPage();
+        newBrowserWindowPage.verify("Free QA Automation Tools Tutorial for Beginners with Examples",
+                newBrowserWindowPage.getNewBrowserWindowTitle());
+        switchWindowPage.switchWindow(0,true);
+        switchWindowPage.verify("https://demoqa.com/automation-practice-switch-windows/", switchWindowPage.getCurrentUrl());
     }
 }

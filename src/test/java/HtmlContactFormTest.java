@@ -10,7 +10,7 @@ public class HtmlContactFormTest {
     @BeforeClass
     public static void openBrowser(){
         HtmlContactForm htmlContactForm = new HtmlContactForm();
-        htmlContactForm.setChromeDriver();
+        htmlContactForm.openChrome();
     }
 
     @Before

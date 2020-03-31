@@ -11,7 +11,7 @@ public class WidgetsPageTest {
     @BeforeClass
     public static void OpenBrowser(){
         WidgetsPage widgetsPage = new WidgetsPage();
-        widgetsPage.setChromeDriver();
+        widgetsPage.openChrome();
     }
     @Before
     public void setUpTest(){

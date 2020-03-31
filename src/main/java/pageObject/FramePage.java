@@ -1,17 +1,19 @@
 package pageObject;
 
 import commons.CommonActions;
+import commons.Header;
 import commons.LeftNevigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class FramePage extends CommonActions {
-
+    Header header;
     LeftNevigation leftNevigation = new LeftNevigation();
 
     public FramePage(){
         initElement();
-        LeftNevigation leftNevigation = new LeftNevigation();
+        leftNevigation = new LeftNevigation();
+        header = new Header();
     }
 
     @FindBy(name = "iframe1")

@@ -1,15 +1,18 @@
 package pageObject;
 import commons.CommonActions;
+import commons.Header;
 import commons.LeftNevigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HtmlContactForm extends CommonActions {
     public LeftNevigation leftNevigation;
+    Header header;
 
     public HtmlContactForm(){
         initElement();
         leftNevigation = new LeftNevigation();
+        header = new Header();
     }
 
     @FindBy(xpath = "//input[@class='firstname']")

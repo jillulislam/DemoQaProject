@@ -1,13 +1,19 @@
 package pageObject;
 
 import commons.CommonActions;
+import commons.Header;
+import commons.LeftNevigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SelectablePage extends CommonActions {
+    Header header;
+    LeftNevigation leftNevigation;
 
     public SelectablePage(){
         initElement();
+        header = new Header();
+        leftNevigation = new LeftNevigation();
     }
 
     @FindBy(xpath = "//ol[@id='selectable']/li[1]")
@@ -59,13 +65,11 @@ public class SelectablePage extends CommonActions {
         clickOn(item_7);
     }
 
-    public void verifyItem1IsClickedAndSelected(){
-      //  clickOnItem1();
-        verifyElementIsSelected(item_1);
+    public void verifyItem1IsDisplayed(){
+        verifyElementIsDisplayed(item_1);
     }
 
     public void verifyItem2IsEnabled(){
-        //  clickOnItem2();
         verifyElementIsSelected(item_2);
     }
 }

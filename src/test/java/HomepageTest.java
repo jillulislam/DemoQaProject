@@ -10,7 +10,7 @@ public class HomepageTest {
     @BeforeClass
     public static void openBrowser(){
         HomePage homePage = new HomePage();
-        homePage.setChromeDriver();
+        homePage.openChrome();
     }
 
     @Before
