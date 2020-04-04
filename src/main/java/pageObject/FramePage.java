@@ -49,6 +49,6 @@ public class FramePage extends CommonActions {
     }
 
     public String getSoftwareTestingTutorial(){
-        return getText(text_softwareTestingTutorial);
+        return getTextOfAnElement(text_softwareTestingTutorial);
     }
 }

@@ -2,6 +2,8 @@ package commons;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,6 +23,7 @@ public class CommonActions {
     static WebDriver driver;
     Actions act;
     Select select;
+    Alert alert;
 
     public void initElement(){
         PageFactory.initElements(driver,this);
@@ -44,6 +47,24 @@ public class CommonActions {
         driver.get(url);
     }
 
+    public WebElement getElement(String locator, String value){
+      WebElement element = null;
+       if (locator.equals("id")){
+           element = driver.findElement(By.id(value));
+       } else if (locator.equals("name")){
+           element = driver.findElement(By.name(value));
+       } else if (locator.equals("xpath")){
+           element = driver.findElement(By.xpath(value));
+       } else if (locator.equals("cssSelector")){
+           element = driver.findElement(By.cssSelector(value));
+       } else if (locator.equals("linktext")){
+           element = driver.findElement(By.linkText(value));
+       } else if (locator.equals("className")){
+           element = driver.findElement(By.className(value));
+        }
+       return element;
+    }
+
     public void verify(String expected, String actual){
         Assert.assertEquals(expected,actual);
     }
@@ -52,7 +73,7 @@ public class CommonActions {
         Assert.assertEquals(expected,actual);
     }
 
-    public void verify(boolean condition){
+    public void verify1(boolean condition){
         Assert.assertTrue(condition);
     }
 
@@ -64,9 +85,6 @@ public class CommonActions {
         return driver.getCurrentUrl();
     }
 
-    public void clickOn(WebElement element){
-        element.click();
-    }
 
     public void typeText(WebElement element, String input){
         element.sendKeys(input);
@@ -108,6 +126,20 @@ public class CommonActions {
         return element.isEnabled();
     }
 
+    public void clickOn(WebElement element){
+        element.click();
+    }
+
+    public void doubleClickOn(WebElement element){
+        act = new Actions(driver);
+        act.doubleClick(element).build().perform();
+    }
+
+    public void clickOnRightButton(WebElement element){
+        act = new Actions(driver);
+        act.contextClick(element).build().perform();
+    }
+
     public void mouseOver(WebElement element){
         act = new Actions(driver);
         act.moveToElement(element).build().perform();
@@ -118,11 +150,16 @@ public class CommonActions {
         act.moveToElement(contantLocation).click().build().perform();
     }
 
+    public void dragAndDropElement(WebElement from, WebElement to){
+        act = new Actions(driver);
+        act.dragAndDrop(from,to).build().perform();
+    }
+
     public void switchToFrame(WebElement frameElement){
         driver.switchTo().frame(frameElement);
     }
 
-    public void switchBackToDefault(WebElement frameElement) {
+    public void switchBackToDefault() {
         driver.switchTo().defaultContent();
     }
 
@@ -140,37 +177,23 @@ public class CommonActions {
         }
     }
 
-    public String getText(WebElement element){
+    public String getTextOfAnElement(WebElement element){
        return element.getText();
+    }
+
+    public void switchToAlertBox(){
+        alert = driver.switchTo().alert();
+    }
+
+    public String getTextOfAlertBox(){
+        return alert.getText();
+    }
+
+    public void acceptAlertBox(){
+        driver.switchTo().alert().accept();
     }
 
     public void closeWindow(){
         driver.close();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    public void setChromeDriver() {
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\jillu\\development\\source_code\\github\\LearningSelenium\\drivers\\chromedriver.exe");
-//        driver = new ChromeDriver();
-//        driver.manage().timeouts().implicitlyWait(20,SECONDS);
-//        driver.manage().window().maximize();
-//    }
-//    public void setGeckoDriver(){
-//        System.setProperty("webdriver.gecko.driver", "C:\\Users\\jillu\\development\\source_code\\github\\LearningSelenium\\geckodriver.exe");
-//        driver = new FirefoxDriver();
-//        driver.manage().window().maximize();
-//        driver.manage().timeouts().implicitlyWait(10,SECONDS);
-//    }

@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import pageObject.AlertPage;
 import pageObject.NewBrowserWindowPage;
 import pageObject.SwitchWindowPage;
 
@@ -28,5 +29,15 @@ public class SwitchWindowTest {
                 newBrowserWindowPage.getNewBrowserWindowTitle());
         switchWindowPage.switchWindow(0,true);
         switchWindowPage.verify("https://demoqa.com/automation-practice-switch-windows/", switchWindowPage.getCurrentUrl());
+    }
+
+    @Test
+    public void verifyAlertBox() {
+        switchWindowPage.clickOnAlertBoxButton();
+        AlertPage alertPage = new AlertPage();
+        alertPage.switchToAlertBox();
+        switchWindowPage.verify("Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organization.",
+                alertPage.getTextOfAlertBox());
+        alertPage.clickingOKOnAlertBox();
     }
 }

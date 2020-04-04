@@ -22,7 +22,8 @@ public class FramePageTest {
         framePage.clickOnSoftwareTestingTutorial();
       //  framePage.verify("this series of Software Testing Tutorial will give you a in-depth understanding on Testing Concepts, Level of Software Testing, its Types, Methods and Techniques.",
       //          framePage.getSoftwareTestingTutorial());
-        framePage.verify(framePage.getSoftwareTestingTutorial().contains("this series of Software Testing Tutorial"));
+        framePage.verify1(framePage.getSoftwareTestingTutorial().contains("this series of Software Testing Tutorial"));
+
     }
 
     @Test

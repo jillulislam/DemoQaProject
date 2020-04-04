@@ -42,4 +42,9 @@ public class SwitchWindowPage extends CommonActions {
     public void clickOnNewBrowserWindow(){
         clickOn(newBrowserWindow);
     }
+
+    public void clickOnAlertBoxButton(){
+        clickOn(alertBox);
+    }
+
 }
