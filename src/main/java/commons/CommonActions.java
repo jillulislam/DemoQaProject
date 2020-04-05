@@ -73,7 +73,7 @@ public class CommonActions {
         Assert.assertEquals(expected,actual);
     }
 
-    public void verify1(boolean condition){
+    public void verify(boolean condition){
         Assert.assertTrue(condition);
     }
 

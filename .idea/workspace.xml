@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e09ef592-d58f-4521-a042-5641f519c6cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/AlertPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/DatePickerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/DroppablePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/PartialLinkTextPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/TooltipAndDoubleClickPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AutomationPracticeFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DroppablePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TooltipAndDoubleClickPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commons/CommonActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/CommonActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/AutomationPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/AutomationPracticeForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/FramePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/FramePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/NewBrowserWindowPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/NewBrowserWindowPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/SwitchWindowPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/SwitchWindowPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FramePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FramePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SwitchWindowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SwitchWindowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commons/CommonActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commons/CommonActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/AutomationPracticeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/AutomationPracticeForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/FramePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/FramePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/HtmlContactForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/HtmlContactForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/SelectablePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/SelectablePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/SwitchWindowPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/SwitchWindowPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/WidgetsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/WidgetsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FramePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FramePageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HomepageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomepageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HtmlContactFormTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HtmlContactFormTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SelectablePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SelectablePageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SwitchWindowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SwitchWindowTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WidgetsPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WidgetsPageTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
