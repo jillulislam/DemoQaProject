@@ -1,15 +1,12 @@
+import commons.Configaration;
+import commons.VerifyTests;
 import org.junit.*;
 import pageObject.FramePage;
 
-public class FramePageTest {
+public class FramePageTest extends Configaration {
 
-    FramePage framePage = new FramePage();
-
-    @BeforeClass
-    public static void openBrowser(){
-        FramePage framePage = new FramePage();
-        framePage.openChrome();
-    }
+    FramePage framePage = new FramePage(driver);
+    VerifyTests verifyTests = new VerifyTests();
 
     @Before
     public void openUrl(){
@@ -22,7 +19,7 @@ public class FramePageTest {
         framePage.clickOnSoftwareTestingTutorial();
       //  framePage.verify("this series of Software Testing Tutorial will give you a in-depth understanding on Testing Concepts, Level of Software Testing, its Types, Methods and Techniques.",
       //          framePage.getSoftwareTestingTutorial());
-        framePage.verify(framePage.getSoftwareTestingTutorial().contains("this series of Software Testing Tutorial"));
+        verifyTests.verify(framePage.getSoftwareTestingTutorial().contains("this series of Software Testing Tutorial"));
 
     }
 
@@ -30,7 +27,7 @@ public class FramePageTest {
     public void accessFrame2AndClickOnSoftwareTestingTutorial(){
         framePage.switchToFrame2();
         framePage.clickOnMenu();
-        System.out.println(framePage.getTitle());
+        framePage.getTitle();
     }
 
     @After

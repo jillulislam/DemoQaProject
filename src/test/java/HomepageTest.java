@@ -1,17 +1,12 @@
+import commons.Configaration;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import pageObject.HomePage;
 
-public class HomepageTest {
+public class HomepageTest extends Configaration {
 
-    HomePage homePage = new HomePage();
-
-    @BeforeClass
-    public static void openBrowser(){
-        HomePage homePage = new HomePage();
-        homePage.openChrome();
-    }
+    HomePage homePage = new HomePage(driver);
 
     @Before
     public void setUpTest() throws InterruptedException {

@@ -1,17 +1,12 @@
+import commons.Configaration;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import pageObject.SelectablePage;
 
-public class SelectablePageTest {
+public class SelectablePageTest extends Configaration {
 
-    SelectablePage selectablePage = new SelectablePage();
-
-    @BeforeClass
-    public static void openBrowser(){
-        SelectablePage selectablePage = new SelectablePage();
-        selectablePage.openChrome();
-    }
+    SelectablePage selectablePage = new SelectablePage(driver);
 
     @Before
     public void openUrl(){

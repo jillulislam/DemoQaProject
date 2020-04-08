@@ -3,6 +3,7 @@ package pageObject;
 import commons.CommonActions;
 import commons.Header;
 import commons.LeftNevigation;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -10,7 +11,8 @@ public class FramePage extends CommonActions {
     Header header;
     LeftNevigation leftNevigation = new LeftNevigation();
 
-    public FramePage(){
+    public FramePage(WebDriver driver){
+        this.driver = driver;
         initElement();
         leftNevigation = new LeftNevigation();
         header = new Header();

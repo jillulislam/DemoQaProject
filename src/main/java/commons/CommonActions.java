@@ -1,6 +1,4 @@
 package commons;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -16,11 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import static java.util.concurrent.TimeUnit.SECONDS;
-
 public class CommonActions {
 
-    static WebDriver driver;
+    public static WebDriver driver;
     Actions act;
     Select select;
     Alert alert;
@@ -29,52 +25,8 @@ public class CommonActions {
         PageFactory.initElements(driver,this);
     }
 
-    public void openChrome() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(20,SECONDS);
-        driver.manage().window().maximize();
-    }
-
-    public void openFirefox(){
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10,SECONDS);
-    }
-
     public void openUrl(String url){
         driver.get(url);
-    }
-
-    public WebElement getElement(String locator, String value){
-      WebElement element = null;
-       if (locator.equals("id")){
-           element = driver.findElement(By.id(value));
-       } else if (locator.equals("name")){
-           element = driver.findElement(By.name(value));
-       } else if (locator.equals("xpath")){
-           element = driver.findElement(By.xpath(value));
-       } else if (locator.equals("cssSelector")){
-           element = driver.findElement(By.cssSelector(value));
-       } else if (locator.equals("linktext")){
-           element = driver.findElement(By.linkText(value));
-       } else if (locator.equals("className")){
-           element = driver.findElement(By.className(value));
-        }
-       return element;
-    }
-
-    public void verify(String expected, String actual){
-        Assert.assertEquals(expected,actual);
-    }
-
-    public void verify(boolean expected, boolean actual){
-        Assert.assertEquals(expected,actual);
-    }
-
-    public void verify(boolean condition){
-        Assert.assertTrue(condition);
     }
 
     public String getTitle(){
@@ -84,7 +36,6 @@ public class CommonActions {
     public String getCurrentUrl(){
         return driver.getCurrentUrl();
     }
-
 
     public void typeText(WebElement element, String input){
         element.sendKeys(input);
@@ -112,18 +63,6 @@ public class CommonActions {
     public String getSelectedValueFromDropdown(WebElement element){
         select = new Select(element);
         return select.getFirstSelectedOption().getText();
-    }
-
-    public boolean verifyElementIsDisplayed(WebElement element){
-        return element.isDisplayed();
-    }
-
-    public boolean verifyElementIsSelected(WebElement element){
-        return element.isSelected();
-    }
-
-    public boolean verifyElementIsEnabled(WebElement element){
-        return element.isEnabled();
     }
 
     public void clickOn(WebElement element){

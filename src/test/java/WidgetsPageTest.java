@@ -1,18 +1,17 @@
+import commons.Configaration;
 import commons.Header;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import pageObject.WidgetsPage;
 
-public class WidgetsPageTest {
-    Header header = new Header();
-    WidgetsPage widgetsPage = new WidgetsPage();
+public class WidgetsPageTest extends Configaration {
 
-    @BeforeClass
-    public static void OpenBrowser(){
-        WidgetsPage widgetsPage = new WidgetsPage();
-        widgetsPage.openChrome();
-    }
+
+    Header header = new Header();
+    WidgetsPage widgetsPage = new WidgetsPage(driver);
+
+
     @Before
     public void setUpTest(){
         widgetsPage.openUrl("https://demoqa.com/category/widgets/");

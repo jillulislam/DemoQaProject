@@ -1,29 +1,27 @@
+import commons.Configaration;
+import commons.VerifyTests;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
 import pageObject.AutomationPracticeForm;
 import pageObject.PartialLinkTextPage;
 
-public class AutomationPracticeFormTest {
+public class AutomationPracticeFormTest extends Configaration {
 
-    AutomationPracticeForm automationPracticeForm = new AutomationPracticeForm();
-
-    @BeforeClass
-    public static void openBrowser(){
-        AutomationPracticeForm automationPracticeForm = new AutomationPracticeForm();
-        automationPracticeForm.openChrome();
-    }
+    AutomationPracticeForm automationPracticeForm = new AutomationPracticeForm(driver);
 
     @Before
-    public void openUrl(){
+    public void openThisUrl(){
         automationPracticeForm.openUrl("https://demoqa.com/automation-practice-form/");
     }
 
     @Test
     public void verifyClickOnPartialLinkText(){
         automationPracticeForm.clickOnPartialLinkText();
-        PartialLinkTextPage partialLinkTextPage = new PartialLinkTextPage();
-        automationPracticeForm.verify("https://www.toolsqa.com/automation-practice-form/",partialLinkTextPage.getCurrentUrl());
+        PartialLinkTextPage partialLinkTextPage = new PartialLinkTextPage(driver);
+        partialLinkTextPage.verifyTheUrl();
     }
 
     @Test
@@ -33,13 +31,21 @@ public class AutomationPracticeFormTest {
     }
 
     @Test
-    public void verifyClickingOnCheckboxes(){
+    public void verifyCheckboxesAreSelevted(){
         automationPracticeForm.clickOnQtp();
         automationPracticeForm.clickOnSeleniumWebDriver();
-        automationPracticeForm.verifyCheckBoxQtpIsSelected();
-        automationPracticeForm.verifyCheckBoxSeleniumWebdriverIsSelected();
+        automationPracticeForm.verifyQtpIsSelected();
+        automationPracticeForm.verifySeleniumWebdriverIsSelected();
+    }
+
+    @Test
+    public void verifyFileIsAttached(){
+        automationPracticeForm.attachFiles();
+    }
+
+    @Test
+    public void verifyNorthAmericaFromDropDownIsSelected(){
+        automationPracticeForm.selectNorthAmericaFromDropDown();
+        automationPracticeForm.verifyNorthAmericaIsSelected();
     }
 }
-//method in common action for upload a file
-//dropdown
-//table

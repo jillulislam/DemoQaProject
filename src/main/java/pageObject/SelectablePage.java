@@ -3,6 +3,8 @@ package pageObject;
 import commons.CommonActions;
 import commons.Header;
 import commons.LeftNevigation;
+import commons.VerifyTests;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -10,7 +12,10 @@ public class SelectablePage extends CommonActions {
     Header header;
     LeftNevigation leftNevigation;
 
-    public SelectablePage(){
+    VerifyTests verifyTests = new VerifyTests();
+
+    public SelectablePage(WebDriver driver){
+        this.driver = driver;
         initElement();
         header = new Header();
         leftNevigation = new LeftNevigation();
@@ -66,10 +71,10 @@ public class SelectablePage extends CommonActions {
     }
 
     public void verifyItem1IsDisplayed(){
-        verifyElementIsDisplayed(item_1);
+        verifyTests.verifyElementIsDisplayed(item_1);
     }
 
     public void verifyItem2IsEnabled(){
-        verifyElementIsSelected(item_2);
+        verifyTests.verifyElementIsSelected(item_2);
     }
 }

@@ -3,6 +3,7 @@ package pageObject;
 import commons.CommonActions;
 import commons.Header;
 import commons.LeftNevigation;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -10,7 +11,8 @@ public class SwitchWindowPage extends CommonActions {
     LeftNevigation leftNevigation;
     Header header;
 
-    public SwitchWindowPage(){
+    public SwitchWindowPage(WebDriver driver){
+        this.driver = driver;
         initElement();
         header = new Header();
         leftNevigation = new LeftNevigation();

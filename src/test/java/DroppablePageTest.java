@@ -1,18 +1,13 @@
+import commons.Configaration;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import pageObject.DroppablePage;
 import pageObject.FramePage;
 
-public class DroppablePageTest {
+public class DroppablePageTest extends Configaration {
 
-    DroppablePage droppablePage = new DroppablePage();
-
-    @BeforeClass
-    public static void openBrowser(){
-        DroppablePage droppablePage = new DroppablePage();
-        droppablePage.openChrome();
-    }
+    DroppablePage droppablePage = new DroppablePage(driver);
 
     @Before
     public  void openUrl(){

@@ -4,18 +4,19 @@ import commons.CommonActions;
 import commons.Header;
 import commons.LeftNevigation;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
 public class DatePickerPage extends CommonActions {
-/*
+
     Header header;
     LeftNevigation leftNevigation;
 
-    public DatePickerPage(){
+    public DatePickerPage(WebDriver driver){
+        this.driver = driver;
         initElement();
         header = new Header();
         leftNevigation = new LeftNevigation();
@@ -32,15 +33,13 @@ public class DatePickerPage extends CommonActions {
     @FindBy(xpath = "//span[@class='ui-datepicker-month']")
     WebElement element_month;
 
-    @FindAll( @FindBy (xpath = "//*[@data-handler='selectDay']"))
+    @FindBy (xpath = "//*[@data-handler='selectDay']")
     List <WebElement> element_day;
 
     public void clickOnCalender(){
         clickOn(calander);
     }
-    public void clckOnNextArrow(){
-        clickOn(element_next);
-    }
+
     public String getYear(){
         return getTextOfAnElement(element_year);
     }
@@ -48,10 +47,10 @@ public class DatePickerPage extends CommonActions {
         return getTextOfAnElement(element_month);
     }
     public String getDay(int index){
-        return getTextOfAnElement(element_day, index);
+        return getTextOfAnElement(element_day.get(index));
     }
-    public void inputDateMonthYear(String month, String year) {
 
+    public void inputDateMonthYear(String date, String month, String year) {
         while (!element_year.getText().contains(year)) {
             clickOn(element_next);
         }
@@ -61,13 +60,13 @@ public class DatePickerPage extends CommonActions {
 
         int size = element_day.size();
         for (int i = 0; i < size; i++) {
-            String date = driver.findElements(By.xpath("//*[@data-handler='selectDay']")).get(i).getText();
-            if (date.equals("13")) {
-                driver.findElements(By.xpath("//*[@data-handler='selectDay']")).get(i).click();
+            String cur_date = element_day.get(i).getText();
+            if (date.equals(cur_date)) {
+                element_day.get(i).click();
                 break;
             }
         }
-    }*/
+    }
 }
 
 

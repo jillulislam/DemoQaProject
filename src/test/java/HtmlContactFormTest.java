@@ -1,17 +1,12 @@
+import commons.Configaration;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import pageObject.HtmlContactForm;
 
-public class HtmlContactFormTest {
+public class HtmlContactFormTest extends Configaration {
 
-    HtmlContactForm htmlContactForm = new HtmlContactForm(); //initElement and ledtnavigation can be access by HtmlContactForm constractor
-
-    @BeforeClass
-    public static void openBrowser(){
-        HtmlContactForm htmlContactForm = new HtmlContactForm();
-        htmlContactForm.openChrome();
-    }
+    HtmlContactForm htmlContactForm = new HtmlContactForm(driver); //initElement and ledtnavigation can be access by HtmlContactForm constractor
 
     @Before
     public void openUrl(){
