@@ -19,8 +19,6 @@ public class AutomationPracticeForm extends CommonActions {
         leftNevigation = new LeftNevigation();
     }
 
-    VerifyTests verifyTests = new VerifyTests();
-
     @FindBy(partialLinkText = "Partial Link Test")
     WebElement partLinkText;
 
@@ -48,7 +46,7 @@ public class AutomationPracticeForm extends CommonActions {
     }
 
     public void verifyFemaleIsSelected(){
-        verifyTests.verifyElementIsSelected(feMale);
+        VerifyTests.verifyElementIsSelected(feMale);
     }
 
     public void clickOnQtp(){
@@ -60,11 +58,11 @@ public class AutomationPracticeForm extends CommonActions {
     }
 
     public void verifyQtpIsSelected(){
-        verifyTests.verifyElementIsSelected(checkboxQtp);
+        VerifyTests.verifyElementIsSelected(checkboxQtp);
     }
 
     public void verifySeleniumWebdriverIsSelected(){
-        verifyTests.verifyElementIsSelected(checkboxSeleniumWebdriver);
+        VerifyTests.verifyElementIsSelected(checkboxSeleniumWebdriver);
     }
 
     public void attachFiles(){

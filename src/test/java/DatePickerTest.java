@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import pageObject.DatePickerPage;
-
 public class DatePickerTest extends Configaration {
 
     DatePickerPage datePickerPage = new DatePickerPage(driver);
@@ -14,8 +13,10 @@ public class DatePickerTest extends Configaration {
     }
 
     @Test
-    public void selectADatefromThecalender(){
+    public void selectADateFromTheCalender() throws InterruptedException {
         datePickerPage.clickOnCalender();
-        datePickerPage.inputDateMonthYear("15","November","2023");
+        datePickerPage.inputDateMonthYear("15","11","2020");
+        datePickerPage.waitFor(3000);
+        datePickerPage.verifyCurrentDate();
     }
 }

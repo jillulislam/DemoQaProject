@@ -11,7 +11,6 @@ public class AlertPage extends CommonActions {
 
     public AlertPage(WebDriver driver){
         this.driver = driver;
-        initElement();
         header = new Header();
         leftNevigation = new LeftNevigation();
     }
@@ -22,5 +21,4 @@ public class AlertPage extends CommonActions {
     public void clickingOKOnAlertBox(){
         acceptAlertBox();
     }
-
 }

@@ -1,9 +1,6 @@
 package commons;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -37,6 +34,16 @@ public class CommonActions {
         return driver.getCurrentUrl();
     }
 
+    public String getElementValue(WebElement element){
+        return element.getAttribute("value");
+    }
+
+
+    public String getTextOfAnElement(WebElement element){
+        return element.getText();
+    }
+
+
     public void typeText(WebElement element, String input){
         element.sendKeys(input);
     }
@@ -67,6 +74,15 @@ public class CommonActions {
 
     public void clickOn(WebElement element){
         element.click();
+    }
+
+    public void clickUsingActionClass(WebElement element){
+        act.moveToElement(element).click();
+    }
+
+    public void javaScriptClick(WebElement element){
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
     }
 
     public void doubleClickOn(WebElement element){
@@ -116,8 +132,9 @@ public class CommonActions {
         }
     }
 
-    public String getTextOfAnElement(WebElement element){
-       return element.getText();
+
+    public void pageRefresh(){
+        driver.navigate().refresh();
     }
 
     public void switchToAlertBox(){
@@ -130,6 +147,51 @@ public class CommonActions {
 
     public void acceptAlertBox(){
         driver.switchTo().alert().accept();
+    }
+
+    public void scrollToAnElement(WebElement element){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public String monthInDigit(String digit){
+        String month = null;
+        if (digit.equals("1")){
+            month = "January";
+        }
+        else if (digit.equals("2")){
+            month = "February";
+        }
+        else if (digit.equals("3")){
+            month = "March";
+        }
+        else if (digit.equals("4")){
+            month = "April";
+        }
+        else if (digit.equals("5")){
+            month = "May";
+        }
+        else if (digit.equals("6")){
+            month = "June";
+        }
+        else if (digit.equals("7")){
+            month = "July";
+        }
+        else if (digit.equals("8")){
+            month = "Augest";
+        }
+        else if (digit.equals("9")){
+            month = "September";
+        }
+        else if (digit.equals("10")){
+            month = "October";
+        }
+        else if (digit.equals("11")){
+            month = "November";
+        }
+        else if (digit.equals("12")){
+            month = "December";
+        }
+        return month;
     }
 
     public void closeWindow(){

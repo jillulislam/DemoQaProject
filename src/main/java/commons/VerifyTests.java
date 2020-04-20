@@ -9,11 +9,15 @@ public class VerifyTests {
         Assert.assertEquals(expected,actual);
     }
 
+    public static void verify(int expected, int actual){
+        Assert.assertEquals(expected,actual);
+    }
+
     public void verify(boolean expected, boolean actual){
         Assert.assertEquals(expected,actual);
     }
 
-    public void verify(boolean condition){
+    public static void verify(boolean condition){
         Assert.assertTrue(condition);
     }
 
@@ -21,13 +25,11 @@ public class VerifyTests {
         return element.isDisplayed();
     }
 
-    public boolean verifyElementIsSelected(WebElement element){
+    public static boolean verifyElementIsSelected(WebElement element){
         return element.isSelected();
     }
 
     public boolean verifyElementIsEnabled(WebElement element){
         return element.isEnabled();
     }
-
-
 }

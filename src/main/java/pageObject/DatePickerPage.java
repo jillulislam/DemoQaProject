@@ -3,6 +3,7 @@ package pageObject;
 import commons.CommonActions;
 import commons.Header;
 import commons.LeftNevigation;
+import commons.VerifyTests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,21 +41,12 @@ public class DatePickerPage extends CommonActions {
         clickOn(calander);
     }
 
-    public String getYear(){
-        return getTextOfAnElement(element_year);
-    }
-    public String getMonth(){
-        return getTextOfAnElement(element_month);
-    }
-    public String getDay(int index){
-        return getTextOfAnElement(element_day.get(index));
-    }
-
     public void inputDateMonthYear(String date, String month, String year) {
         while (!element_year.getText().contains(year)) {
             clickOn(element_next);
         }
-        while (!element_month.getText().contains(month)) {
+
+        while (!element_month.getText().contains(monthInDigit(month))) {
             clickOn(element_next);
         }
 
@@ -66,6 +58,19 @@ public class DatePickerPage extends CommonActions {
                 break;
             }
         }
+    }
+
+    public String getCurrentDate(){
+        return getElementValue(calander);
+    }
+
+//    public String getCurrentDate(){
+//        return getTextOfAnElement(calander);
+//    }
+
+
+    public void verifyCurrentDate(){
+        VerifyTests.verify("11/15/2020",getCurrentDate());
     }
 }
 

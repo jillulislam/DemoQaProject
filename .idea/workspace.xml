@@ -2,54 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e09ef592-d58f-4521-a042-5641f519c6cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/Configaration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/VerifyTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DatePickerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/HandB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HandBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commons/CommonActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/CommonActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/Configaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/Configaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commons/VerifyTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/VerifyTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/AlertPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/AlertPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/AutomationPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/AutomationPracticeForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/DatePickerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/DatePickerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/DroppablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/DroppablePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/FramePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/FramePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/HtmlContactForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/HtmlContactForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/NewBrowserWindowPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/NewBrowserWindowPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/PartialLinkTextPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/PartialLinkTextPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/SelectablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/SelectablePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/SwitchWindowPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/SwitchWindowPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/TooltipAndDoubleClickPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/TooltipAndDoubleClickPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/WidgetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/WidgetsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AutomationPracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomationPracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DroppablePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DroppablePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DatePickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DatePickerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FramePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FramePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomepageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomepageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HtmlContactFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HtmlContactFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SelectablePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SelectablePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SwitchWindowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SwitchWindowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TooltipAndDoubleClickPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TooltipAndDoubleClickPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WidgetsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WidgetsPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/commons/CommonActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commons/CommonActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/AlertPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/AlertPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commons/Configaration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commons/Configaration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commons/VerifyTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commons/VerifyTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObject/AutomationPracticeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/AutomationPracticeForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObject/DatePickerPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/DatePickerPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/DroppablePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/DroppablePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/FramePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/FramePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/HtmlContactForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/HtmlContactForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/NewBrowserWindowPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/NewBrowserWindowPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/PartialLinkTextPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/PartialLinkTextPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObject/SelectablePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/SelectablePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/SwitchWindowPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/SwitchWindowPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/TooltipAndDoubleClickPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/TooltipAndDoubleClickPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObject/WidgetsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObject/WidgetsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AutomationPracticeFormTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AutomationPracticeFormTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DroppablePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DroppablePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DatePickerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DatePickerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/FramePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FramePageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HomepageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomepageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HtmlContactFormTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HtmlContactFormTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SelectablePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SelectablePageTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SwitchWindowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SwitchWindowTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TooltipAndDoubleClickPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TooltipAndDoubleClickPageTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/WidgetsPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WidgetsPageTest.class" afterDir="false" />
@@ -85,36 +59,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FreshDirect" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.DroppablePageTest">
-    <configuration name="AutomationPracticeFormTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DemoQaProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AutomationPracticeFormTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AutomationPracticeFormTest.verifyClickOnPartialLinkText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DemoQaProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AutomationPracticeFormTest" />
-      <option name="METHOD_NAME" value="verifyClickOnPartialLinkText" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DatePickerTest.selectADateFromTheCalender">
     <configuration name="DatePickerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoQaProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DatePickerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatePickerTest.selectADateFromTheCalender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoQaProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DatePickerTest" />
+      <option name="METHOD_NAME" value="selectADateFromTheCalender" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,22 +94,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DroppablePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HandBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoQaProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DroppablePageTest" />
+      <option name="MAIN_CLASS_NAME" value="HandBTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HandBTest.addAnItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoQaProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HandBTest" />
+      <option name="METHOD_NAME" value="addAnItem" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DroppablePageTest" />
-        <item itemvalue="JUnit.AutomationPracticeFormTest" />
-        <item itemvalue="JUnit.AutomationPracticeFormTest.verifyClickOnPartialLinkText" />
+        <item itemvalue="JUnit.DatePickerTest.selectADateFromTheCalender" />
         <item itemvalue="JUnit.DatePickerTest.selectADatefromThecalender" />
+        <item itemvalue="JUnit.HandBTest.addAnItem" />
         <item itemvalue="JUnit.DatePickerTest" />
+        <item itemvalue="JUnit.HandBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -162,58 +137,66 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="2" key="#Project_Structure" timestamp="1584538061882">
+    <state x="233" y="2" key="#Project_Structure" timestamp="1587034696243">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="2" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1584538061882" />
-    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585993023996">
+    <state x="233" y="2" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1587034696243" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586681435091">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1585993023996" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1586681435091" />
     <state x="15" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585946059482">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="15" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1585946059482" />
-    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1584866790701">
+    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1587327776071">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584866790701" />
-    <state width="1237" height="28" key="GridCell.Tab.0.bottom" timestamp="1586384144114">
+    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587327776071" />
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1587213595512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="28" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586384144114" />
-    <state width="1237" height="28" key="GridCell.Tab.0.center" timestamp="1586384144114">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587213595512" />
+    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1587213595512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="28" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586384144114" />
-    <state width="1237" height="28" key="GridCell.Tab.0.left" timestamp="1586384144114">
+    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587213595512" />
+    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1587213595512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="28" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586384144114" />
-    <state width="1237" height="28" key="GridCell.Tab.0.right" timestamp="1586384144114">
+    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587213595512" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1587213595512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="28" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586384144114" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587213595512" />
+    <state x="346" y="55" key="RollbackChangesDialog" timestamp="1586985034977">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="346" y="55" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1586985034977" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1584707114193">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584707114193" />
-    <state x="349" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1584566055309">
+    <state x="349" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1587214122272">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="349" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584566055309" />
+    <state x="349" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587214122272" />
     <state x="346" y="0" width="588" height="680" key="find.popup" timestamp="1586121918652">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="346" y="0" width="588" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1586121918652" />
-    <state x="91" y="49" key="new project wizard" timestamp="1584537782165">
+    <state x="91" y="49" key="new project wizard" timestamp="1587034529895">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="91" y="49" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1584537782165" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1586248858983">
+    <state x="91" y="49" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1587034529895" />
+    <state x="350" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586559217274">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1586248858983" />
+    <state x="350" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1586559217274" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1586854321282">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1586854321282" />
     <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup" timestamp="1586085067940">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

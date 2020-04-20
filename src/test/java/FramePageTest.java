@@ -6,7 +6,6 @@ import pageObject.FramePage;
 public class FramePageTest extends Configaration {
 
     FramePage framePage = new FramePage(driver);
-    VerifyTests verifyTests = new VerifyTests();
 
     @Before
     public void openUrl(){
@@ -17,9 +16,7 @@ public class FramePageTest extends Configaration {
     public void clickOnSoftwareTestingTutorial(){
         framePage.switchToFrame1();
         framePage.clickOnSoftwareTestingTutorial();
-      //  framePage.verify("this series of Software Testing Tutorial will give you a in-depth understanding on Testing Concepts, Level of Software Testing, its Types, Methods and Techniques.",
-      //          framePage.getSoftwareTestingTutorial());
-        verifyTests.verify(framePage.getSoftwareTestingTutorial().contains("this series of Software Testing Tutorial"));
+        VerifyTests.verify(framePage.getSoftwareTestingTutorial().contains("this series of Software Testing Tutorial"));
 
     }
 

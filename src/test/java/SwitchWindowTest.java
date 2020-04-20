@@ -10,7 +10,6 @@ import pageObject.SwitchWindowPage;
 public class SwitchWindowTest extends Configaration {
 
     SwitchWindowPage switchWindowPage = new SwitchWindowPage(driver);
-    VerifyTests verifyTests = new VerifyTests();
 
     @Before
     public void openUrl(){
@@ -22,7 +21,7 @@ public class SwitchWindowTest extends Configaration {
         switchWindowPage.clickOnNewBrowserWindow();
         switchWindowPage.switchWindow(1,false);
         NewBrowserWindowPage newBrowserWindowPage = new NewBrowserWindowPage(driver);
-        verifyTests.verify("Free QA Automation Tools Tutorial for Beginners with Examples",
+        VerifyTests.verify("Free QA Automation Tools Tutorial for Beginners with Examples",
                 newBrowserWindowPage.getNewBrowserWindowTitle());
         switchWindowPage.switchWindow(0,true);
         VerifyTests.verify("https://demoqa.com/automation-practice-switch-windows/", switchWindowPage.getCurrentUrl());
@@ -33,7 +32,7 @@ public class SwitchWindowTest extends Configaration {
         switchWindowPage.clickOnAlertBoxButton();
         AlertPage alertPage = new AlertPage(driver);
         alertPage.switchToAlertBox();
-        verifyTests.verify("Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organization.",
+        VerifyTests.verify("Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organization.",
                 alertPage.getTextOfAlertBox());
         alertPage.clickingOKOnAlertBox();
     }

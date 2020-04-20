@@ -7,7 +7,6 @@ import pageObject.WidgetsPage;
 
 public class WidgetsPageTest extends Configaration {
 
-
     Header header = new Header();
     WidgetsPage widgetsPage = new WidgetsPage(driver);
 

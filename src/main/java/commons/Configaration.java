@@ -33,8 +33,8 @@ public class Configaration{
         openChrome();
     }
 
-    @AfterClass
-    public static void closeAllWindowes(){
-        driver.quit();
-    }
+//    @AfterClass
+//    public static void closeAllWindowes(){
+//        driver.quit();
+//    }
 }
